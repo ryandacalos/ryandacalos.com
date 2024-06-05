@@ -1,0 +1,330 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="ad.size" content="width=728,height=90">
+            <title>728x90</title>
+
+            <link 
+                rel="stylesheet"
+                type="text/css" 
+                href="https://fast.fonts.net/cssapi/d389521e-7391-4213-b2b4-fd8151873dc5.css"
+                >
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/CSSRulePlugin.min.js"></script>
+                
+            <style>
+            
+				
+                html, body {
+                    width: 100%;
+                    height: 100%;
+                }
+                
+                body {
+                    margin: 0 auto;
+                    padding: 0;
+                }
+                
+                .superscript {
+                    font-size: 6px;
+                    vertical-align: top;
+                    line-height: 1.1;
+                }
+                
+                div {
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    text-rendering: optimizeLegibility;
+                    font-smooth: always;
+                    font-smoothing: antialiased;
+                    -moz-font-smoothing: antialiased;
+                    /*will-change: transform;*/
+                }
+                
+                div#stage {
+                    position: relative;
+                    background-color: #fff;
+                    width: 728px;
+                    height: 90px;
+                    border: 1px solid black;
+                    overflow: hidden;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                }
+                
+                div#stage img {
+                    opacity: 0;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    pointer-events: none;
+                }
+                
+                img[id^="fr"] {
+                        transform-origin: left;
+                    }
+                
+                div#stage img#fr1 {
+                    opacity: 0;
+                }
+                
+                div#stage div#text_1 {
+                    position: absolute;
+                    left: 150px;
+                    top: 17px;
+                    width: 192px;
+                    height: 28px;
+                    text-align: left;
+                    font-size: 24px;
+                    line-height: 100%;
+                    letter-spacing: calc(-20 / 1000 * 1em);
+                    font-family: "Macys Sans W05 Medium", sans-serif;
+                    color: #000000;
+                    vertical-align: top;
+                    opacity: 0
+                }
+
+				div#stage div#text_2 {
+                    position: absolute;
+                    left: 640px;
+                    top: 15px;
+                    width: 83px;
+                    height: 53px;
+                    text-align: left;
+                    font-size: 14px;
+                    line-height: 18px;
+                    letter-spacing: calc(0 / 1000 * 1em);
+                    font-family: "Macys Sans W05 Medium", sans-serif;
+                    color: #ffffff;
+                    vertical-align: top;
+                }
+                
+                div#stage div#cta:after {
+                    content: "";
+                    display: inline-block;
+                    width: 100%;
+                    vertical-align: top;
+                    margin-top: 2%;
+                    border-top: 1px solid #030303;
+                    opacity: 0.8;
+               } 
+               
+               div#stage div#cta {
+                    position: absolute;
+                    left: 150px;
+                    top: 51px;
+                    width: max-content;
+                    height: 19px;
+                    text-align: left;
+                    vertical-align: top;
+                    line-height: 80%;
+                    font-family: Macys Sans W05 Regular, sans-serif;
+                    font-size: 18px;
+                    z-index: 10;
+                    color: #030303;
+                    opacity: 0.8;
+                }
+
+
+                div#stage:hover div#cta:after {
+                    animation: underlines 0.35s ease-in-out;
+                    animation-fill-mode: forwards; 
+                }
+
+                div#stage:hover div#cta {
+                    animation: colors 0.35s ease-in-out;
+                    animation-fill-mode: forwards;
+                }
+
+                @keyframes underlines {
+                    0% {
+                        width: 0%;
+                    }
+                    100% {
+                        width: 100%;
+                        border-top: 1px solid #030303;
+                        opacity: 1;
+                    }
+                }
+
+                @keyframes colors {
+                    100% {
+                        color: #030303;
+                        opacity: 1;
+                    }
+                }
+
+                div#stage div#macyslogo {
+                    position: absolute;
+                    left: 475px;
+                    top: 24px;
+                    width: 137px;
+                    height: 38px;
+                }
+                
+                div#stage div#macyslogo img {
+                    opacity: 1;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                #replayBtn{
+                    opacity: 0;
+                    position: absolute;
+                    width: 13px;
+                    left: 5px;
+                    top: 5px;
+                }
+
+                #replayBtn:hover{
+                    fill: blue;
+                }
+                
+                
+                div#stage div#logo-one {
+                    position: absolute;
+                    left: 628px;
+                    top: 0px;
+                    width: 100px;
+                    height: 90px;
+                }
+            
+                div#stage div#logo-one img {
+                    opacity: 1;
+                    width: 100%;
+                    height: 100%;
+                }
+
+            </style>
+        </head>
+        <body>
+            <div id="stage">
+            
+                <img id="fr1" alt="stage-image-1" src="img/img_728x90_0.jpg" />
+
+                <img id="fr2" alt="stage-image-2" src="img/img_728x90_1.jpg" />
+            
+                <img id="fr3" alt="stage-image-3" src="img/img_728x90_2.jpg" />
+            
+                <img id="fr4" alt="stage-image-4" src="img/img_728x90_3.jpg" />
+            
+
+
+               <div id="logo-one">
+                    <img alt="logo_one_image" src="img/logo-one.svg" />
+               </div>
+               
+
+
+                <div id="text_1">
+                    <span>You clean up nice</span>
+                </div>
+                
+                <div id="text_2">
+                    <span>Find more <br />inspo in the <br />Macy's app</span>
+                </div>
+                
+                <div id="cta">Shop The Trend</div>
+                
+                <div id="macyslogo">
+                    <img alt="macyslogo-image" src="img/macys-logo.svg" />
+                </div>
+
+            </div>
+            
+            <div id="replayBtn">
+                <svg 
+                    version="1.1" 
+                    id="Capa_1" 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    viewBox="0 0 177.98 199.49"
+                    style="enable-background:new 0 0 177.98 199.49;"
+                    xml:space="preserve"
+                    >
+
+                <style type="text/css">
+                    .st0{fill:#000;}
+                </style>
+
+                <g>
+                    <path class="st0" d="M87.7,190.64c-44.05,0-79.89-35.83-79.89-79.88c0-19.86,7.36-38.91,20.74-53.64
+                        C40.8,43.63,57.13,34.78,74.93,31.9V2.33l52.86,46.15L74.93,94.62V59.41c-23.26,5.78-40.16,26.92-40.16,51.35
+                        c0,29.19,23.74,52.93,52.93,52.93c29.18,0,52.92-23.74,52.92-52.93v-5h26.96v5C167.58,154.81,131.75,190.64,87.7,190.64z"
+                        />
+                    <path class="st0" d="M162.58,110.76c0,41.29-33.59,74.88-74.88,74.88s-74.89-33.59-74.89-74.88c0-38.67,29.46-70.58,67.12-74.48
+                        V13.33l40.26,35.15L79.93,83.62V53.37c-28.28,3.81-50.16,28.09-50.16,57.39c0,31.94,25.98,57.93,57.93,57.93
+                        c31.94,0,57.92-25.99,57.92-57.93H162.58z"
+                        />
+                </g>
+                </svg>
+            </div>
+        </body>
+        <script>
+            // noinspection ES6ConvertVarToLetConst
+            var clickTag = "http://www.macys.com";
+            
+            document.querySelector("#stage").addEventListener("click", myLink);
+            
+            function myLink(){
+                window.open(clickTag);
+            }
+            
+
+
+            window.onload = () => {
+
+            var underline = CSSRulePlugin.getRule("div#stage div#cta:after")
+            
+            // noinspection ES6ConvertVarToLetConst
+            var tl = new TimelineMax({onComplete: replayVisible});
+
+            
+
+            tl
+
+                    	// frame 1
+                    	.to ( '#fr1', 2, { opacity: 1, ease:Expo.easeOut}, "<")
+                        .to ( '#fr1', 9, { scale: 1.1, ease:Quad.easeInOut}, "<")
+                    	.to ( '#text_1', 2, { opacity:1, ease:Quad.easeInOut}, "<")
+                    
+
+                    	// frame 2
+                    	.to ( '#fr1', .5, { opacity: 0, ease:Expo.easeOut}, "<3")
+                    	.to ( '#fr2', 2.5, { opacity: 1, ease:Expo.easeOut}, "<")
+                        .to ( '#fr2', 9, { scale: 1.1, ease:Quad.easeInOut},"<")
+
+                    	// frame 3
+                    	.to ( '#fr2', .5, { opacity: 0, ease:Expo.easeOut}, "<3")
+                    	.to ( '#fr3', 2.5, { opacity: 1, ease:Expo.easeOut}, "<")
+                        .to ( '#fr3', 9, { scale: 1.1, ease:Quad.easeInOut},"<")
+                        
+
+                    	// frame 4
+                    	.to ( '#fr3', .5, { opacity: 0, ease:Expo.easeOut}, "<3")
+                    	.to ( '#fr4', 2.5, { opacity: 1, ease:Expo.easeOut}, "<")
+                                         
+            ;
+            // noinspection ES6ConvertVarToLetConst
+            var replayBtn = document.querySelector("#replayBtn");
+            
+            function replayVisible(){
+                replayBtn.style.opacity ="1";
+                replayBtn.style.visibility ="visible";
+            }
+            
+
+            replayBtn.addEventListener("click", replayClick);
+            
+            function replayClick(){
+                tl.restart();
+                replayBtn.style.visibility ="hidden";
+            }
+        }
+                         
+
+
+        </script>
+    </html>
