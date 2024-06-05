@@ -1,0 +1,194 @@
+/*=================================== Helvetica Bold Italic ============================*/
+/*font-family:'c'*/
+/*=================================== Helvetica Bold ============================*/
+/*font-family:'Helvetica Neue LT W01_71488914';*/
+/*--=================================== Helvetica Medium ============================*/
+/*font-family:'Helvetica Neue LT W01_65 Md';*/
+/*--=================================== Helvetica Medium condensed ============================*/
+/*font-family:'Helvetica Neue LT W01_67 Md Cn';*/
+/*--=================================== Helvetica blod condensed ============================*/
+/*font-family:'Helvetica Neue LT W01_77 Bd Cn';*/
+
+.content {
+	width: 160px;
+	height: 600px;
+}
+.bg {
+	left: 0px;
+	top: 0px;
+}
+.text_1 {
+    top: 490px;
+    left: 10px;
+    text-align: center;
+    color: #000;
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 14px;
+    font-family: 'Helvetica Neue LT W01_67 Md Cn', sans-serif;
+
+}
+.text_2 {
+	left: 80px;
+	top: 150px;
+	text-align: center;
+	color: #fff;
+	font-size: 13px;
+	letter-spacing: 0px;
+	line-height: 14px;
+	font-family: 'Helvetica Neue LT W01_77 Bd Cn', sans-serif;
+}
+.text_3 {
+	left: 77px;
+	top: 150px;
+	text-align: center;
+	color: #fff;
+	font-size: 13px;
+	letter-spacing: 0px;
+	line-height: 14px;
+	font-family: 'Helvetica Neue LT W01_77 Bd Cn', sans-serif;
+}
+.text_4 {
+	top: 90px;
+	left: 19px;
+	text-align: left;
+	color: #1297cc;
+	font-size: 14px;
+	letter-spacing: 0px;
+	line-height: 14px;
+	font-family: 'Helvetica Neue LT W01_77 Bd Cn', sans-serif;
+	text-transform: uppercase;
+}
+.item_0 {
+	left: 0px;
+	top: 0px;
+}
+.circle {
+	left: 222px;
+	top: 90px;
+}
+.spikes {
+	left: 222px;
+	top: 90px;
+}
+.circle1 {
+	left: 44px;
+	top: 110px;
+}
+.spikes1 {
+	left: 44px;
+	top: 110px;
+}
+.circle2 {
+	left: 44px;
+	top: 110px;
+}
+.spikes2 {
+	left: 43px;
+	top: 110px;
+}
+.item_1 {
+	left: 0px;
+	top: 0px;
+}
+.item_2 {
+	left: 0px;
+	top: 0px;
+}
+.item_3 {
+	left: 77px;
+	top: 4px;
+}
+.item_4 {
+	left: 69px;
+	top: -10px;
+}
+.item_5 {
+	left: 67px;
+	top: -13px;
+}
+.txt_0 {
+	left: 8px;
+    top: 13px;
+}
+.txt_1 {
+	left: -1px;
+    top: 22px;
+}
+.txt_2 {
+	left: 11px;
+	top: 114px;
+}
+.txt_3 {
+	left: 55px;
+	top: 72px;
+}
+.text_0 {
+	color: #FFFFFF;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+.lockup_0 {
+	top: 163px;
+	left: 4px;
+}
+.Macys_svg.white #shell path:nth-child(2) {
+	stroke: #fff;
+	stroke-width: .7;
+	stroke-miterlimit: 10;
+}
+.Macys_svg.black #shell path:nth-child(2) {
+	stroke: #000;
+	stroke-width: .7;
+	stroke-miterlimit: 10;
+}
+.cta {
+	top: 533px;
+	left: 35px;
+	opacity: 1;
+	position: absolute;
+	display: inline-block;
+}
+.cta .cta_shell {
+	width: 90px;
+	height: 19px;
+	letter-spacing: 2px;
+}
+.cta .cta_shell p {
+	font-size: 10.4pt;
+	line-height: 16px;
+	text-align: center;
+	width: 100%;
+	margin: auto;
+	font-family: 'Helvetica Neue LT W01_71488914', sans-serif;
+	letter-spacing: .7pt;
+	color: #000;
+	text-decoration: underline;
+}
+.content:hover .cta_shell p {
+	-webkit-animation: out 0.3s forwards;
+	-moz-animation: out 0.3s forwards;
+	animation: out 0.3s forwards;
+}
+ @-webkit-keyframes out {
+50% {
+ color: rgba(226,26,44,1);
+}
+51% {
+ color: rgba(226,26,44,1);
+}
+100% {
+ color: rgba(226,26,44,1);
+}
+}
+ @keyframes out {
+50% {
+ color: rgba(226,26,44,1);
+}
+51% {
+ color: rgba(226,26,44,1);
+}
+100% {
+ color: rgba(226,26,44,1);
+}
+}

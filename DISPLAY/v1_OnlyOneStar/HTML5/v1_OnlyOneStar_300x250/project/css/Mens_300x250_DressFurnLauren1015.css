@@ -1,0 +1,99 @@
+.content {
+	width:300px;
+	height:250px;
+	background-color: #8fa5b6;
+}
+.items > * {
+	position:absolute;
+}
+.items {
+	left: 0px;
+	top: 0px;;
+}
+
+.oos_0 {
+    top: 10px;;
+    left: 26px;
+}
+.oos_1 {
+    top: 40px;;
+    left: 26px;
+}
+.oos_2 {
+    top: 70px;;
+    left: 26px;
+}
+.logo_1 {
+    top: 205px;
+    left: 10px;
+}
+.cta {
+    top: 170px;
+    left: 15px;
+}
+.cta_shell {
+    border-radius: 0px;
+	width: 113px;
+}
+.logo_2 {
+    top: 105px;;
+    left: 26px;
+}
+.txt_0 {
+    top: 15px;
+    left: 237px;
+}
+.txt_1 {
+    top: 15px;
+    left: 194px;
+}
+.disclaimer{
+    margin-top: 2px;
+}
+.macys_logo {
+    top: 1px;
+}
+.midframe_logo {
+    top: 213px;
+    left: 80px;
+}
+.midframe_0 {
+    top: -1px;
+    left: 32px;
+}
+.midframe_1 {
+    top: 42px;
+    left: 123px;
+
+}
+
+
+
+.content:hover .cta_shell {
+	-webkit-animation: out 0.3s forwards;
+	animation: out 0.3s forwards;
+}
+
+@-webkit-keyframes out {
+50% {
+	background:#000;
+}
+51% {
+	background:#000;
+}
+100% {
+	background:#000;
+}
+}
+
+@keyframes out {
+50% {
+	background:#000;
+}
+51% {
+	background:#000;
+}
+100% {
+	background:#000;
+}
+}

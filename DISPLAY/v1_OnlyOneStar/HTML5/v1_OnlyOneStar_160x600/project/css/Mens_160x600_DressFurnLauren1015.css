@@ -1,0 +1,99 @@
+
+.content {
+	width:160px;
+	height:600px;
+	background-color: #f7f7f7;
+}
+.item_mask {
+	overflow:hidden;
+	width: 160px;
+	height:503px;
+	left: -2px;
+}
+.items > * {
+	position:absolute;
+}
+.items {
+	top:0px;
+	left: 0px;
+}
+.oos_0 {
+    top: 10px;;
+    left: 26px;
+}
+.oos_1 {
+    top: 45px;;
+    left: 26px;
+}
+.oos_2 {
+    top: 80px;;
+    left: 26px;
+}
+.logo_0 {
+    top: 10px;;
+    left: 10px;
+}
+.logo_1 {
+    top: 558px;
+    left: 13px;
+}
+.midframe_logo {
+    top: 42px;
+    left: 40px;
+}
+.midframe_0 {
+    top: 99px;
+    left: 2px;
+}
+.midframe_1 {
+    top: 324px;;
+    left: 2px;
+}
+
+.cta {
+    top: 519px;
+    left: 17px;
+}
+.cta_shell {
+    border-radius: 0px;
+	width: 125px;
+}
+.logo_2 {
+    top: 124px;
+    left: 38px;
+}
+.txt_0 {
+    top: 217px;
+    left: 106px;
+}
+
+
+
+.content:hover .cta_shell {
+	-webkit-animation: out 0.3s forwards;
+	animation: out 0.3s forwards;
+}
+
+@-webkit-keyframes out {
+50% {
+	background:#000;
+}
+51% {
+	background:#000;
+}
+100% {
+	background:#000;
+}
+}
+
+@keyframes out {
+50% {
+	background:#000;
+}
+51% {
+	background:#000;
+}
+100% {
+	background:#000;
+}
+}
